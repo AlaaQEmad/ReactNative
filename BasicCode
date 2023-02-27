@@ -1,28 +1,52 @@
-import React from 'react';
-import {Text, View , Button} from 'react-native';
+import React , {useState} from 'react';
+import {Text, View,ScrollView, Image,Button, TextInput} from 'react-native';
 
 const YourApp = () => {
+  const [isEnter, setIsEnter] = useState(true);
+
   return (
+  
     <View 
-      style={{ backgroundColor: 'pink',
+      style={{ backgroundColor: 'white',
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
       }}>
-      <Text  style={{ color: 'Black' ,   fontSize: 35}}>Hi I am Alaa Emad 🎉</Text>
-      <Text> </Text>
+     <Image
+          source={{
+            uri: 'https://img.freepik.com/free-vector/golden-simple-frame-with-watercolor-stain_23-2148383054.jpg?w=2000',
+          }}
+          style={{width: 200, height: 200}}
+        />
+      <Text  style={{ color: 'pink' ,   fontSize: 35 ,fontfamily:''}}>Hello
+       </Text>
+      <Text style={{ color: 'pink' ,   fontSize: 35}}>
+        I am Alaa Emad</Text>
+        <TextInput
+        style={{
+          height: 35, width :300,
+          borderColor: 'pink',
+          borderWidth: 6,
+        }}
+        defaultValue="    Write your name"
+      />
+      <Text></Text>
       <Button style={{
         justifyContent: 'center',
         alignItems: 'center'
         }}
- 
-  title="Learn More"
+ onPress={() => {
+          setIsEnter(false);
+        }}
+        disabled={!isEnter}
+        title={isEnter ? 'I Wrote my name ' : 'Thank you!'}
   
-  color="#841584"
+  color="pink"
   
 />
 
     </View>
+    
   );
 };
 
