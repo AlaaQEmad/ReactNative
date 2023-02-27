@@ -3,6 +3,8 @@ import {Text, View,ScrollView, Image,Button, TextInput} from 'react-native';
 
 const YourApp = () => {
   const [isEnter, setIsEnter] = useState(true);
+    const [text, setText] = useState('');
+
 
   return (
   
@@ -28,9 +30,17 @@ const YourApp = () => {
           borderColor: 'pink',
           borderWidth: 6,
         }}
-        defaultValue="    Write your name"
+ placeholder="  Enter your name"
+          onChangeText={newText => setText(newText)}
+        defaultValue={text}
       />
-      <Text></Text>
+      <Text style={{padding: 10, fontSize: 20}}>
+        {text
+          .split(' ')
+          .map(word => word && 'you are wiriting your name')
+          .join(' ')}
+      </Text>
+      
       <Button style={{
         justifyContent: 'center',
         alignItems: 'center'
@@ -51,3 +61,4 @@ const YourApp = () => {
 };
 
 export default YourApp;
+
