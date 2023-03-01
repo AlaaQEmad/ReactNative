@@ -1,6 +1,6 @@
 # ReactNative
 
-The Basics part Done 
+The Basics 
 
 
 
