@@ -16,4 +16,4 @@ Environment Setup
 
 
 ![](img/env1.png)
-![](img/env2.png)
+![](img/env.png)
