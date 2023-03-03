@@ -7,7 +7,7 @@ The Basics
 
 
 
-![](page.jpg)
+![](img/page.jpg)
 
 
 
