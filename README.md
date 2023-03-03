@@ -7,7 +7,7 @@ The Basics
 
 
 
-![](photo_6046214755129081320_y.jpg)
+![](page.jpg)
 
 
 
