@@ -19,5 +19,7 @@ Environment Setup
 ![](img/env.png)
 
 
-JS Code
+Final Project (JS Code)
+
+
 ![](img/Project.png)
